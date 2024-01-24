@@ -9,23 +9,18 @@
 </head>
 <body>
 <section class="greeting-container">
-    <h1>Greetings!</h1>
+    <h1>Welkom Avonturier!</h1>
     <div class="welcome-message">
-        <h2 id="welcome-text"></h2>
+        <h2 id="welcome-text">Dit is een kijk achter de schermen bij de Scandinavische mythologie.</h2>
     </div>
     <div class="button-container">
-        <button id="button1">Button 1</button>
-        <button id="button2">Button 2</button>
+        <a href="../../websiteMaWa/onePager.html" id="button1">Individuele Website</a>
+        <a id="button2">Handleiding Puzzel</a>
     </div>
 </section>
 
 <script>
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const username = urlParams.get('username');
-
-    const welcomeText = `Hello, ${username}! Welcome to the greeting page.`;
-    document.getElementById('welcome-text').innerText = welcomeText;
 </script>
 </body>
 </html>

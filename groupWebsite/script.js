@@ -1,7 +1,6 @@
 document.querySelector('.login-form').addEventListener('submit', function(event){
     event.preventDefault();
 
-    let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
 
     const passwords = {
@@ -11,9 +10,13 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     };
 
     if (password in passwords) {
+        // Hide the login form
+        document.querySelector('.login-form').style.display = 'none';
+
+        // Show the congratulatory message at the top
         let welcomeMessage = document.createElement('div');
-        welcomeMessage.innerHTML = "<h2>Welcome " + username + "! to the new room</h2>";
-        document.querySelector('.login-container').appendChild(welcomeMessage);
+        welcomeMessage.innerHTML = "<h2>Gefeliciteerd voor het halen van de puzzel!</h2>";
+        document.body.insertBefore(welcomeMessage, document.body.firstChild);
 
         // Show the unlocked button
         document.querySelector('.unlocked-button').style.display = 'block';
@@ -21,10 +24,3 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
         alert('Incorrect password');
     }
 });
-
-// Function to be called when the unlocked button is clicked
-function visitWebsite() {
-    // You can implement the behavior when the unlocked button is clicked
-    // For example, redirecting to the website associated with the password
-    // You can use the passwords object to get the website URL
-}

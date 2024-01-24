@@ -1,4 +1,10 @@
-/* style.css */
+:root {
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    font-family: var(--font-stack);
+}
 
 body {
     margin: 0;
@@ -7,27 +13,32 @@ body {
     background-color: #1A1A1A;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url("../imagee.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Common styles for both pages */
-button {
+a {
     padding: 10px;
     border: none;
     border-radius: 3px;
     margin-top: 10px;
     cursor: pointer;
     background-color: #0066cc;
-
+    color: white;
 }
 
-button:hover {
+a:hover {
     background-color: #003c79;
 }
 
-/* Specific styles for the greeting page */
+
 .greeting-container {
     text-align: center;
 }
@@ -35,4 +46,8 @@ button:hover {
 .button-container {
     display: flex;
     justify-content: space-around;
+}
+
+.welcome-message {
+    margin-top: 20px;
 }
