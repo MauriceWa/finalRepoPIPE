@@ -10,15 +10,15 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     };
 
     if (password in passwords) {
-        // Hide the login form
+
         document.querySelector('.login-form').style.display = 'none';
 
-        // Show the congratulatory message at the top
+
         let welcomeMessage = document.createElement('div');
         welcomeMessage.innerHTML = "<h2>Gefeliciteerd voor het halen van de puzzel!</h2>";
         document.body.insertBefore(welcomeMessage, document.body.firstChild);
 
-        // Show the unlocked button
+
         document.querySelector('.unlocked-button').style.display = 'block';
     } else {
         alert('Incorrect password');

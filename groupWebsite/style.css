@@ -13,7 +13,7 @@ body {
     background-color: #1A1A1A;
     color: white;
     display: flex;
-    flex-direction: column; /* Updated to column layout */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: center; /* Center text within the form */
+    text-align: center;
 }
 
 .input-group {
@@ -67,7 +67,7 @@ button:hover {
 
 .unlocked-button {
     display: none;
-    margin-top: 10px; /* Added margin */
+    margin-top: 10px;
 }
 
 a {
