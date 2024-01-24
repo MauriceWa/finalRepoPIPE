@@ -7,5 +7,9 @@ video {
 
 }
 body{
-    background-color: black;
+    background: url("Images/mcgregor.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }

@@ -100,7 +100,7 @@ body {
     filter: brightness(90%);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .main-navigation {
         flex-direction: column;
