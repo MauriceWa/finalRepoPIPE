@@ -1,0 +1,15 @@
+video {
+    max-width: 20vh;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+
+}
+body{
+    background: url("Images/mcgregor.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
